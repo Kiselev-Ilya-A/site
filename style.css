@@ -1,0 +1,94 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+}
+
+.round-image {
+    position: relative;
+    border-radius: 10%;
+    width: 300px;
+    height: 200px;
+    border: 2px solid #ccc;
+    float: right;
+    margin-right: 30px;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+main {
+	padding: 20px;
+}
+
+section {
+	margin-bottom: 20px;
+}
+
+h1, h2 {
+	margin-top: 0;
+}
+
+table {
+	width: 70%;
+    border: 1px solid black;
+}
+
+th, td {
+	padding: 10px;
+	text-align: left;
+    font-weight: bold;
+    width: 20%;
+}
+
+th {
+	background-color: black;
+	color: orange;
+}
+
+footer {
+	background-color: black;
+	color: white;
+	padding: 15px;
+	text-align: center;
+    width: 100%;
+}
+
+body {
+    background-image: url("http://catherineasquithgallery.com/uploads/posts/2021-02/1614534038_92-p-belii-fon-bumaga-109.jpg")
+}
+
+
+
+p, .width-text {
+    width: 50%;
+
+}
+
+:target:before {
+    content: "";
+    display: block;
+  }
+
+html {
+    scroll-behavior: smooth;
+}
