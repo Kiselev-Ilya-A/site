@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html>
-	<div id="top"></div>
+<html lang="ru">
 <head>
+	<meta charset="UTF-8">
 	<title>Моя домашняя страница</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style.css">
@@ -14,11 +14,14 @@
 				<li><a href="#Me">Обо мне</a></li>
 				<li><a href="./team.html">Моя команда</a></li>
 			</ul>
+			<ul class="auth_button">
+				<li><a href="./auth.html">Войти</a></li>
+			</ul>
 		</nav>
 	</header>
 	<main>
 		<section>
-			<img src="https://w.forfun.com/fetch/11/11b44204f76df92526e7498f1fe3292b.jpeg" 
+			<img src="https://img.freepik.com/premium-vector/young-man-sitting-and-working-on-laptop-computer_76775-231.jpg" 
 			alt="Учусь" class="round-image">
 			<h1>Киселев Илья</h1>
 			<div id="Me">
@@ -27,10 +30,10 @@
 				Бывший студент IT колледжа в направлении "Информационная безопасность 
 				автоматизированных систем", продолжающий учиться в этом направлении.</p>
 			</div>
-			<p>Здесь будут выкладываться домашние задания</p>
 		</section>
 		<section>
 			<h2>ИНФОБЕЗ Основы веб-технологий</h2>
+			<div id="TABLE">
 			<table>
 				<tr>
 					<th>Задание</th>
@@ -69,8 +72,8 @@
 				</tr>
 				<tr>
 					<td>Лабораторная работа № 2</td>
-					<td>???</td>
-                    <td>Не выполнено</td>
+					<td>28.09.2023</td>
+                    <td>Выполнено</td>
 				</tr>
 				<tr>
 					<td>Лабораторная работа № 3</td>
@@ -93,8 +96,54 @@
                     <td>Не выполнено</td>
 				</tr>
 			</table>
+		</div>
 		</section>
-		<a href="#top">Вернуться в начало страницы</a>
+		
+		<div class="container">
+			<h2>Форма обратной связи</h2>
+			<form action="https://httpbin.org/post" method="post" enctype="multipart/form-data">
+				<div class="form-input">
+					<label for="full_name">ФИО:</label>
+					<input type="text" id="full_name" name="1. full_name" required>
+				</div>
+				<div class="form-input">
+					<label for="email">Email:</label>
+					<input type="email" id="email" name="2. email" required>
+				</div>
+				<div class="form-input">
+					<label class="block_button">Откуда узнали обо мне:</label>
+					<label class="inline_button" for="radio1">От одногруппника</label>
+					<input type="radio" id="radio1" name="3. who_said" value="От одногруппника">
+					<label class="inline_button" for="radio2">От преподавателя</label>
+					<input type="radio" id="radio2" name="3. who_said" value="От преподавателя">
+				</div>
+				<div class="form-input">
+					<label for="type">Тип обращения:</label>
+					<select id="type" name="4. message_type" required>
+						<option value="" disabled selected>Выберите тип</option>
+						<option value="Жалоба">Жалоба</option>
+						<option value="Предложение">Предложение</option>
+					</select>
+				</div>
+				<div class="form-input">
+					<label for="message">Текст сообщения:</label>
+					<textarea id="message" name="5. message" rows="4" required></textarea>
+				</div>
+				<div class="form-input">
+					<label for="attachments">Вложения:</label>
+					<input type="file" id="attachments" name="attachments">
+				</div>
+				<div class="form-input">
+					<input type="checkbox" id="consent" name="consent" required>
+					<label for="consent">Даю согласие на обработку персональных данных</label>
+				</div>
+				<div class="form-actions">
+					<input type="submit" value="Отправить">
+				</div>
+				
+			</form>
+		</div>
+		<a class="return" href="#top">Вернуться в начало страницы</a>
 	</main>
 	<footer>
 		<p>© 2023 Моя прогрессия. Все права защищены.</p>
