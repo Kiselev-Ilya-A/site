@@ -1,0 +1,39 @@
+.system {
+    border: 1px solid white;
+    width: 35%;
+    margin-top: 20px;
+    padding: 30px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.h1 {
+    display: flex;
+    flex: 1;
+    align-items:flex-end;
+}
+
+body {
+    margin-left: 3%;
+    background-image: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMSEhUSEhIVFRUVFRUVFRUVFRUVFRUVFRUWFhUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDQ0NDg0NDisZFRktKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIALEBHAMBIgACEQEDEQH/xAAYAAEBAQEBAAAAAAAAAAAAAAABAAIDB//EACQQAQEBAQABBAEEAwAAAAAAAAABEQISITFBYVEDcZHwE6HB/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDxSosgVBVAaAlWgVoiBqLBGoDMhpFBYoNM9QbhlZ5ILToV5AXr8CNeIsA2jFIzaBwSKtSgzVptZBWstjAZTSwDEMINeP3F4/c/llAbz+zPiUAIQJJYCW/SpgKGxQwBIjiwBiwyG8gzgxvGQaWGEFikVQC0xgTrAa7ZkXXR4mgzoakM5BlSNeJnIDF4tsgsZ6a6rnmgtKWgiNWgcGK0aDOnVIAa1aFAasShkAVTUfgDGvFmejUBYsJBjVjU5VAQjR5A2LWdQGit4fAHK8tc+isMgDMhWfJ8QGqKrADNbsY0B0pFzPmoBRWqx0AtUWLASxU4BixIF4mQa1KCxC0wDhg1T+6Bnq1eVFoHEYgEireMg5WKuki6BjnlrG5y1IAxqDACxVK0FBRqBDDFYDOM9N2sQAj7DQZ6Hi1IaDCaAM4sKBnTBaoDVg1kgZGxpBRfK0zkGo0zIYC6a8mfZA1ehBWvnPoBv8HnpidH0Bq9fQv990QMv3/ujb+7WKgxZVG8c70Ddz8jRzVaBSxjQNrF6biBx9zjeKgzqsFNBmwY1ooKUHBgCpqQ4Dm1IZycBESK0D/xpnnn8ulARqCK9AYmPIeQNaf077ucrXPuApsp+XWQHKVvhm8unMBWJSroAx1+zWs9/ACK/wACdHyBVQdXVgFSjzZ0G+mNp8mfIFhtFo0CmdIEKEEREBQQKxHVoNwWs6NBrVehKgEpOLAUawRqAeW7WIbQKtjFogOmAS4x11QdMY/LM6q0FPQYtWgdZt+FrINSKzGZGuaCxRrxVBnVgqoJIaC0snQaQ1aBUEpBCkgxKWhoKU4sIGIqAoeWbTAbZvR8WQWNQSNyCsf2Mx0s9TBHPvll07YnIAWOlZ69gclEeYDbPXLY38geR7LkXkFoxWMgcCAJYogaGHBgGkQwDq1m1ArToxYDUaxmU2gdGhAdagjcgBHQK0Z19OXLp/kEFnr6nWOumfIG7R5MjAavQt1nGoDN5PEdJBbAVDOwgpfwtZwgLF4rToM4sLNAWhIG0kBFqAKEKAbDzRDgNQLVKDSsS0DFOhR5A01Y5+R0GmbRaASWHmAicQMRqnF4g51Tl0xjroF4HAQQ1KgzQbWQOoIFQbBQaRAJJSAosOCAYUpQRClAiq1SgFGsAGFSmAcCAFocq37BddKdMNQGlaNFBi9VSJAotFGg2mfJaAsGNrAYxqGswFTgVBQwIFTykB+QEDQqQJUIE1UgNSQHlpIBCkCvsxz7pA1+mPhIFDfZIGYqkDNZpQMqFAeG6kASQGChA//Z");
+    color: white;
+    font-size: 110%;
+}
+
+.about_cont {
+    border: 1px solid white;
+    width: 35%;
+    padding: 30px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.container {
+    /*border: 1px solid white;*/
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+    align-items:center;
+    width: 100%;
+    
+}

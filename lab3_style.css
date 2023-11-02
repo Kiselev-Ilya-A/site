@@ -1,0 +1,56 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	padding: 0;
+	background-image: url("https://catherineasquithgallery.com/uploads/posts/2021-02/1614289833_85-p-chisto-chernii-fon-bez-nichego-107.png");    
+    color: white;
+    margin-left: 3%;
+}
+
+.main_cont {
+    display: flex;
+    margin-right: 5%;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items:flex-end;
+    width: 25%;
+    border-radius: 10%;
+    text-align: center;
+
+}
+
+.container{
+    flex: 3;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    flex-wrap: wrap;
+    align-items:center;
+    width: 70%;
+}
+
+.item{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 15px;
+    border: 1px solid white;
+    border-radius: 10%;
+    height: fit-content;
+    width: fit-content;
+    flex-basis: 25%;
+    margin-left: 20px;
+    margin-top: 20px;
+    background-color: rgb(0, 102, 255);
+}
