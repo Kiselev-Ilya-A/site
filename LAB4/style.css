@@ -1,0 +1,18 @@
+body {
+    background-image: url("http://catherineasquithgallery.com/uploads/posts/2021-02/1614534038_92-p-belii-fon-bumaga-109.jpg");
+}
+
+img {
+    border: 1px black solid;
+    width: 300px;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+.div {
+    text-align: center;
+}
+
