@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="request.css">
+    <title>Редактирование заявки</title>
+</head>
+<body>
+    <h1>Редактирование заявки</h1>
+    <p>ФИО гида: [ФИО]</p>
+    <p>Название маршрута: [название]</p>
+    <form action="https://httpbin.org/post" method="post" enctype="multipart/form-data">
+        <div class="main">
+            <div class="Data">
+                <p>Дата экскурсии:</p>
+                <form action="/search" method="GET">
+                <input type="text" name="Data" placeholder="01.01.1999" required>
+            </div>
+            <div class="Time">
+                <p>Время начала:</p>
+                <form action="/search" method="GET">
+                <input type="text" name="Time" placeholder="17:00" required>
+            </div>
+            <div class="How_long">
+                <p>Длительность экскурсии:</p>
+                <form action="/search" method="GET">
+                <input type="text" name="How_long" placeholder="2 часа" required>
+            </div> 
+            <div class="Number">
+                <p>Количество человек:</p>
+                <form action="/search" method="GET">
+                <input type="text" name="Number" placeholder="3" required>
+            </div>
+        </div>
+        <h3>Дополнительные опции:</h3>
+        <div class="options">
+            <div class="checkbox1">
+                <label for="checkbox">
+                    <input type="checkbox" id="confirm" name="consent">
+                    [Название опции]
+                </label>
+                <p>[Описание опции]</p>
+                <p>[Размер скидки/надбавки]</p>
+            </div>
+            <div class="checkbox2">
+                <label for="checkbox">
+                    <input type="checkbox" id="confirm" name="consent2">
+                    [Название опции]
+                </label>
+                <p>[Описание опции]</p>
+                <p>[Размер скидки/надбавки]</p>
+            </div>
+        </div>
+        <div class="Final_price">
+            <h3>Итоговая цена: <b>[цена]</b></h3>
+        </div>
+        <input type="submit" value="Отправить">
+    </form>
+</body>
+</html>

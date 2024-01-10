@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+    <script type="text/javascript">
+        var map;
+        DG.then(function () {
+            map = DG.map('container', {
+                center: [55.75, 37.62],
+                zoom: 11
+            });
+                  DG.marker([55.75, 37.62]).addTo(map);
+
+      // Добавляем адрес маркера
+      DG.marker([55.75, 37.62])
+        .addTo(map)
+        .bindPopup(address)
+        .openPopup();
+    });
+    // Слушаем событие ввода в поле адреса
+    const addressInput = document.getElementById("start");
+    addressInput.addEventListener("input", function () {
+        // Разблокируем кнопку отправки формы, если поле не пустое
+        submitBtn.disabled = addressInput.value === "";
+    });
+    </script>
+    <title>Главная страница</title>
+</head>
+<body>
+    <header>
+        <div class="head_div">
+        <img src="https://avatars.mds.yandex.net/i?id=c61176acd6c9b746c66baf2882553892a0295064-10874712-images-thumbs&n=13" alt="Нет" class="logo">
+        <div class="head_div2">    
+            <h1>Название компании</h1>
+            <h3 class="clide">Экскурсии по Москве</h3>
+        </div>
+        </div>
+        <div class="profile_link">
+            <a href="..." class="Profile-link">Личный кабинет</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="alert">
+
+        </div>
+        <div class="Napolnenost">
+            <div class="ImageMain">
+                <img src="https://avatars.mds.yandex.net/i?id=c61176acd6c9b746c66baf2882553892a0295064-10874712-images-thumbs&n=13" alt="Нет" class="picture">
+            </div>
+            <div class="PictureMain">
+                <p>Описание компании:
+                    Достоинства нашей компании:</p>
+            </div>
+        </div>
+        <div class="Map">
+            <h2>Откуда вы хотите начать путешествие:</h2>
+            <form action="/search" method="GET">
+                <input type="text" name="address" placeholder="Введите адрес" required>
+                <button type="submit" id="start">Начать</button>
+                <div id="container"></div>
+
+        </div>
+        <div class="list">
+            <h2>Список пешеходных маршрутов</h2>
+            <form action="/search" method="GET">
+            <input type="text" name="address" placeholder="Поиск по названию" required>
+            <button type="submit">Найти</button>
+            
+            <select name="mode" class="select">
+                <option value="car">Название</option>
+                <option value="transit">Описание</option>
+                <option value="walk">Основные объекты</option>
+            </select>
+                
+            <table class="table1">
+				<tr>
+					<th>Название</th>
+					<th>Описание</th>
+                    <th>Основные объекты</th>
+				</tr>
+                <tr>
+					<td>...</td>
+					<td>...</td>
+                    <td>...</td>
+				</tr>
+            </table>
+        </div>
+        <div class="gid">
+            <h2>Доступные гиды по маршруту ...</h2>
+            <table class="table2">
+				<tr>
+					<th></th>
+					<th>ФИО</th>
+                    <th>Языки</th>
+                    <th>Опыт работы</th>
+                    <th>Стоимость услуг в час</th>
+                    <th></th>
+				</tr>
+                <tr>
+					<td>...</td>
+					<td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+				</tr>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2023 Моя прогрессия. Все права защищены.</p>
+        <p>Контактная информация: телефон +7 (985) 194-55-71, email: mail@mail.ru</p>
+    </footer>
+</body>
+
+</html>

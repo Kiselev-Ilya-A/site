@@ -1,0 +1,23 @@
+.main {
+    display: flex;
+}
+
+.options {
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.checkbox1 {
+    padding-right: 40px;
+    
+}
+
+.Data, .Time , .How_long {
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+p {
+    font-size: 20px;
+}

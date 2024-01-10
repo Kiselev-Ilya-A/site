@@ -1,0 +1,159 @@
+html {
+    width: auto;
+}
+
+body {
+    padding: 0;
+    padding-left: 20px;
+    background-color: rgb(192, 189, 189);
+}
+
+.logo {
+width: 100px;
+height: auto;
+padding-right: 20px;
+}
+
+h1 {
+display: flex;
+margin: 0;
+}
+
+h3 {
+display: flex;
+margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    color: purple
+}
+
+.head_div2 {
+display: flex;
+align-items: flex-start;
+flex-wrap: nowrap;
+flex-direction: column;
+margin: 0;
+padding: 0;
+}
+
+.head_div {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    
+    margin: 0;
+    padding: 0;
+    }
+
+.clide {
+text-align: right;
+}
+
+.profile_link {
+    align-items: center;
+font-size: 18px;
+text-decoration: none;
+}
+
+.Napolnenost{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;  
+}
+
+.Napolnenost img {
+    width: 100%;
+    padding-right: 20px;
+}
+
+.Napolnenost p {
+    width: 50%;
+    padding-left: 20px;
+}
+
+.Map {
+    border: 2px dotted black;
+    width: 80%;
+    height: 520px;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+.select {
+    margin-left: 17px;
+}
+
+.list {
+    border: 1px solid black;
+    width: 80%;
+    height: 500px;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+.gid {
+    border: 1px solid black;
+    width: 80%;
+    height: 500px;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+.table1 {
+    border: 1px solid black;
+    text-align: center;
+    margin-top: 20px;
+    width: 95%;
+}
+
+.table2 {
+    border: 1px solid black;
+    text-align: center;
+    margin-top: 20px;
+    width: 95%;
+}
+
+.table1 th, td {
+	padding: 10px;
+	text-align: left;
+    font-weight: bold;
+    width: 33%;
+    font-size:large;
+}
+
+.table1 th {
+	background-color: black;
+	color: orange;
+}
+
+.table2 th, td {
+	padding: 10px;
+	text-align: left;
+    font-weight: bold;
+    width: 16%;
+    font-size:large;
+}
+
+.table2 th {
+	background-color: black;
+	color: orange;
+}
+
+#container {
+margin: 0;
+margin-top: 20px;
+margin-bottom: 20px;
+width: 100%;
+height: 100%;
+overflow: hidden;
+width:500px; 
+height:400px;
+border: 2px solid black;
+}
