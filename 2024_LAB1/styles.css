@@ -1,0 +1,39 @@
+body {
+    font-size: 1.25rem;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.avatar {
+    max-width: 100%;
+}
+
+.comments {
+    flex:1
+}
+
+.rounded-circle {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+    border-radius: 15%;
+}
+
+.card-img {
+    width: 50%;
+    height: auto;
+    margin-right: 10px;
+    border-radius: 15%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.avatar1 {
+    
+    margin-top: 7px;
+}
+
+footer {
+    text-align: right;
+}
