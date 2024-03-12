@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Лабораторная работа №1</title>
+  </head>
+  <body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+              <a class="navbar-brand" href="{{ url_for('index') }}">Лабораторная работа № 1</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="templates\continue.html">Задание</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="templates\continue.html">Посты</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="templates\continue.html">Об авторе</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <main class="my-3">
+        <div class="container">
+          <h1>Инфофорум-2024</h1>
+          <div class="text-muted">
+            <p>Опубликовано 30.01.2024. Автор: safe-surf</p>
+          </div>
+          <div class="row mb-3">
+          <div class="d-flex">
+              <div>
+                  <img class="card-img" src="images/IB.jpg" alt="Card image cap">
+                  <div class="card-body">
+                      <h2 class="card-title">Инфофорум-2024</h2>
+                      <p class="card-text">
+                        С 7 по 8 февраля 2024 года в г. Москве пройдет 26-й Национальный форум информационной безопасности «Инфофорум-2024». <br><br>
+                        Форум пройдёт при поддержке аппарата Совета Безопасности РФ, Государственной Думы, Минцифры России, ФСБ России, ФСТЭК России, Минобороны России и других государственных регуляторов. В работе форума примут участие представители регулирующих органов в сфере информационных технологий и информационной безопасности, руководители федеральных министерств и ведомств, руководители отечественных и зарубежных компаний, эксперты отрасли.
+                      </p>
+                  </div>
+              </div>
+          </div>
+    </div>
+    <div class="row">
+      <h1 class="my-5">Последние посты</h1>
+      <div class="row mb-3">
+        <div class="col-md-4 d-flex">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h2 class="card-title">Конференция «Технологии SOC»</h2>
+                    <p class="card-text">
+                      30 ноября 2023г. в г. Москве состоится Конференция «Технологии SOC», организатором которого является Медиа Группа «Авангард».
+                    </p>
+                    <a href="https://safe-surf.ru/specialists/news/702006/?sphrase_id=45726" class="btn btn-primary">Читать дальше &rarr;</a>
+                </div>
+                <div class="card-footer text-muted">
+                    Опубликовано 30.01.2024.
+                    Автор: safe-surf
+                </div>
+            </div>
+        </div>
+  
+        <div class="col-md-4 d-flex">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h2 class="card-title">III Международный форум кибербезопасности государства «Цифротех»</h2>
+                    <p class="card-text">
+                      С 9 по 10 ноября 2023 г. в г. Санкт-Петербурге пройдет Международный форум кибербезопасности государства «Цифротех», организатором которого выступает Министерство цифрового развития, связи и массовых коммуникаций Российской Федерации. 
+                    </p>
+                    <a href="https://safe-surf.ru/specialists/news/700244/?sphrase_id=45727" class="btn btn-primary">Читать дальше &rarr;</a>
+                </div>
+                <div class="card-footer text-muted">
+                    Опубликовано 01.11.2023.
+                    Автор: safe-surf
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 d-flex">
+          <div class="card mb-4">
+              <div class="card-body">
+                  <h2 class="card-title">SOC-Forum 2023</h2>
+                  <p class="card-text">
+                    С 14 по 15 ноября 2023 года в г. Москве ФСБ России и ФСТЭК России проведут конференцию SOC-Forum 2023.
+                  </p>
+                  <a href="https://safe-surf.ru/specialists/news/701155/?sphrase_id=45597" class="btn btn-primary">Читать дальше &rarr;</a>
+              </div>
+              <div class="card-footer text-muted">
+                  Опубликовано 06.11.2023.
+                  Автор: safe-surf
+              </div>
+          </div>
+      </div>
+      </div>
+      <div class="comments">
+        <form>
+            <div class="mb-3">
+                <label for="comment-text" class="form-label">Оставьте комментарий:</label>
+                <textarea class="form-control" id="comment-text" rows="3" placeholder="Введите ваш комментарий здесь"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Отправить</button>
+        </form>
+        <div class="d-flex mt-4">
+            <div class="flex-shrink-0">
+                <img src="images/avatar.jpg" class="rounded-circle" alt="Sample Image">
+            </div>
+            <div>
+                <div>
+                    <h5>Jhon Carter <small class="text-muted"><i>Опубликовано 10 января 2021 года</i></small></h5>
+                    <p>Полезная информация! Надо посетить</p>
+                    
+                    <!-- Вложенный медиа-объект -->
+                    <div class="d-flex mt-4">
+                        <div class="flex-shrink-0">
+                            <img src="images/avatar.jpg" class="rounded-circle" alt="Sample Image">
+                        </div>
+                        <div>
+                            <h5>Clark Kent <small class="text-muted"><i>Опубликовано 12 января 2021 года</i></small></h5>
+                            <p>Обязательно!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Киселев Илья Андреевич | 221-331</p>
+    </footer> 
+  </body>
+</html>
