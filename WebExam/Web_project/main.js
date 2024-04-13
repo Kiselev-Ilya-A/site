@@ -234,6 +234,10 @@ function displayLanguagesSelect() {
     let selector = document.getElementById("guideLanguagePlace");
     selector.innerHTML = '';
     selector.appendChild(createOption("Не выбран"));
+    let uniqueObjects = getUniqueLanguages();
+    uniqueObjects.forEach(name => {
+        selector.appendChild(createOption(name));
+    });
 }
 
 function guideLanguageFilter() {
