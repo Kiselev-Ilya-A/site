@@ -41,7 +41,7 @@ const rowsPerPageRoutes = 3;
 let totalCountRoutes = 0;
 
 function getRoutes() {
-    const url = `http://exam-2023-1-api.std-900.ist.mospolytech.ru/api/routes?api_key=${api_key}`;
+    const url = `http://edu.std-900.ist.mospolytech.ru/api/routes?api_key=${api_key}`;
 
     //Создание нового запроса
     let xhr = new XMLHttpRequest();
@@ -72,7 +72,7 @@ function choiceButtonClick(event) {
     let rowGuide = event.target.parentNode.parentNode;
     rowGuide.className = "table-warning";
     let routeId = event.target.getAttribute("route-id");
-    const url = `http://exam-2023-1-api.std-900.ist.mospolytech.ru/api/routes/${routeId}/guides?api_key=${api_key}`;
+    const url = `http://edu.std-900.ist.mospolytech.ru/api/routes/${routeId}/guides?api_key=${api_key}`;
 
     let xhr = new XMLHttpRequest();
     xhr.open("GET", url);
@@ -351,7 +351,7 @@ function submitButton() {
     const button = document.getElementById('submitButton');
 
     button.addEventListener('click', async () => {
-        const response = await fetch('http://exam-2023-1-api.std-900.ist.mospolytech.ru/api/orders?api_key=${api_key}', {
+        const response = await fetch('http://edu.std-900.ist.mospolytech.ru/api/orders?api_key=${api_key}', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json'
