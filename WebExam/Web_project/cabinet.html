@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет Гиды.ру</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="cabinet.js"></script>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <header class="header">
+        <nav class="d-flex flex-wrap justify-content-center align-items-center mt-2">
+            <div class="col-sm-2 px-2">
+                <img src="img/logo.png" alt="logo" class="w-50">
+            </div>
+            <div class="col-sm-8">
+                <div class="w-50">
+                    <h1 class="text-end">Гиды.ру</h1>
+                    <p class="text-end">Экскурсии по Москве</p>
+                </div>
+            </div>
+            <a class="btn btn-outline-primary me-2" href="index.html">Главная страница</a>
+        </nav>
+    </header>
+    <main>
+        <div class="container pt-3">
+            <div class="alerts my-3">
+                <div id="alerts-template" class="alert alert-dismissible fade show d-none" role="alert">
+                    <span class="msg">
+                        <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                    </span>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            </div>
+
+            <h2 class="pb-2 border-bottom text-center">Оставленные заявки</h2>
+
+            <div class="table-responsive">
+                <table class="table table-bordered mt-4 text-center">
+                    <thead>
+                        <tr class="table-light">
+                            <th>№</th>
+                            <th>Название маршрута</th>
+                            <th>Дата</th>
+                            <th>Стоимость</th>
+                        </tr>
+                    </thead>
+                    <tbody id="ordersTableBody">
+                    </tbody>
+                </table>
+            </div>
+
+            <nav>
+                <ul class="pagination justify-content-center">
+                    <li class="page-item"><a class="page-link">Назад</a></li>
+                    <li class="page-item"><a class="page-link">Далее</a></li>
+                </ul>
+            </nav>
+            <div class="row gap-2 justify-content-center">
+                <button type="button" id="firstPage" class="btn btn-primary col-xs-2 col-sm-2">Первая
+                    страница</button>
+                <button type="button" id="lastPage" class="btn btn-primary col-xs-2 col-sm-2">Последняя
+                    страница</button>
+            </div>
+        </div>
+    </main>
+    <footer class="mt-auto py-3 bg-body-tertiary">
+        <p class="text-center mb-0">Киселев Илья Андреевич</p>
+    </footer>  
+</body>
+
+</html>

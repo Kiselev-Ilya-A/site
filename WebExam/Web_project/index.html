@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гиды.ру</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+    <script type="text/javascript">
+        var map;
+
+        DG.then(function () {
+            map = DG.map('container', {
+                center: [55.75, 37.61],
+                zoom: 12
+            });
+
+            DG.marker([55.75, 37.61]).addTo(map).bindPopup('Вы кликнули по мне!');
+        });
+    </script>
+    
+</head>
+<body class="rgba(25, 135, 84, 1)">
+    <header class="header">
+        <nav class="d-flex flex-wrap justify-content-center align-items-center mt-2">
+            <div class="col-sm-2 px-2">
+                <img src="img/logo.png" class="w-50" alt="logo">
+            </div>
+            <div class="col-sm-8">
+                <div class="w-50">
+                    <h1 class="text-end">Гиды.ру</h1>
+                    <p class="text-end">Экскурсии по Москве</p>
+                </div>
+                    
+            </div>
+            <a class="btn btn-outline-primary me-2" href="cabinet.html">Личный кабинет</a>
+        </nav>
+    </header>
+    <main class="main">
+<!--Уведомления-->
+        <div class="alerts"></div>
+<!-- Шаблон уведомления -->
+        <template id="alert-template">
+            <div class="alert alert-success alert-dismissible fade show mx-2" role="alert">
+                <span class="msg">
+                    <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                </span>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        </template>
+
+<!--Информация о компании-->
+        <div class="container col-xxl-8 px-4 py-5">
+            <h1 class="display-5 fw-bold lh-1 mb-3">
+                 Добро пожаловать в Гиды.ру
+            </h1>
+            <p class="fs-5">
+            Мы - команда с искренней любовью к Москве! 🏰 <br>
+            Присоединяйтесь к нам, чтобы вместе исследовать город с новой перспективы!<br>
+            Наши туры - это не просто путешествие, а настоящее исследование, которое вдохновляет!
+            </p>
+        </div>
+<!--Достоинства компании-->
+        <div class="images">
+            <img class="moscow_image" alt="1" src="img/moscow.jpg">
+            <img class="moscow_image" alt="2" src="img/moscow2.jpeg">
+        </div>
+            <h2 class="Advantages">Достоинства нашей компании</h2>
+            <div class="row mt-2">
+                <div class="col-sm text-center py-2 mx-4">
+                    <p class="fs-3 fw-bold">Профессиональные гиды</p>
+                    <p class="fs-5 text-justify">
+                        Компания предоставляет услуги опытных и высококвалифицированных экскурсоводов, которые способны увлекательно рассказать о достопримечательностях Москвы, делая тур более информативным и захватывающим.                        
+                    </p>
+                </div>
+                <div class="col-sm text-center py-2 mx-4">
+                    <p class="fs-3 fw-bold">Индивидуальный подход к клиентам</p>
+                    <p class="fs-5 text-justify">
+                        Компания готова создать уникальные маршруты, адаптированные под интересы и предпочтения клиентов, обеспечивая каждому туристу индивидуальный опыт. 
+                    </p>
+                </div>
+                <div class="col-sm text-center py-2 mx-4">
+                    <p class="fs-3 fw-bold">Эксклюзивные Маршруты</p>
+                    <p class="fs-5 text-justify">
+                        Исследуйте уникальные маршруты, которые доступны только через Гиды.ру, и окунитесь в особую атмосферу города.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm text-center py-2 mx-4">
+                    <p class="fs-3 fw-bold">Поддержка Клиентов</p>
+                    <p class="fs-5 text-justify">
+                        Мы всегда доступны для вас, готовы помочь с любыми вопросами, связанными с вашими пешеходными прогулками по Москве.
+                    </p>
+                </div>
+                <div class="col-sm text-center py-2 mx-4">
+                    <p class="fs-3 fw-bold">Лёгкое Бронирование</p>
+                    <p class="fs-5 text-justify">
+                        Легко и оперативно резервируйте экскурсии прямо на сайте, сэкономив свое время и усилия.
+                    </p>
+                </div>
+                <div class="col-sm text-center py-2 mx-4">
+                    <p class="fs-3 fw-bold">Индивидуальные Маршруты</p>
+                    <p class="fs-5 text-justify">
+                        Планируйте индивидуальные прогулки пешком по Москве, настраивая маршруты под свои предпочтения со свободным выбором исторических и культурных достопримечательностей
+                    </p>
+                </div>
+            </div>
+        </div>
+        <h2 class="d-flex flex-wrap justify-content-center align-items-center mt-2">Откуда вы хотите начать путешествие:</h2>
+        <div class="d-flex flex-wrap justify-content-center align-items-center mt-2">
+            <form action="/search" method="GET">
+                <input type="text" name="address" placeholder="Введите адрес" required>
+                <button type="submit">Начать</button>
+                <div id="container"></div>
+            </form>
+        </div>
+<!--Список пешеходных маршрутов и гидов-->
+        <div class="container px-4 py-5">
+            <h2 class="pb-2">Список пешеходных маршрутов</h2>
+            <div class="pb-3 text-nowrap">
+                <!--Search-->
+                <div class="position-relative col-lg-3">
+                    <label class="form-label" for="searchName">Поиск экскурсий</label>
+                    <input class="form-control" id="searchName" placeholder="Название экскурсии" required type="text">
+                </div>
+<!--Выбор достопримечательностей-->
+                <div class="position-relative col-lg-3 mt-3">
+                    <label class="form-label" for="selectObject">Достопримечательность</label>
+                    <select class="form-select" id="selectObject">
+                        <option value="Не выбрано">Не выбрано</option>
+                    </select>
+                </div>
+            </div>
+<!--Таблица маршрутов-->
+            <div>
+                <table class="table table-bordered table-hover table-sm">
+                    <thead >
+                        <tr>
+                            <th>Название</th>
+                            <th>Описание</th>
+                            <th>Места</th>
+                            <th>Запись</th>
+                        </tr>
+                    </thead>
+                    <tbody id="routes-list"></tbody>
+                </table>
+            </div>
+<!--Навигация таблицы-->
+            <div class="container text-center my-2">
+                Страница <span id="page-start">1</span> из <span id="page-end">1</span>
+            </div>
+            <div class="container d-flex justify-content-center">
+                <nav>
+                    <ul id="pagination" class="pagination">
+                        <li class="page-item cursor-pointer">
+                            <a class="page-link text-warning" id="prev">Предыдущая</a>
+                        </li>
+                        <li class="page-item cursor-pointer">
+                            <a class="page-link text-warning" id="next">Следующая</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        
+<!--Гиды-->
+        <div class="container px-4">
+            <h2 class="pb-2">Доступные гиды по маршруту</h2>
+            <div class="pb-3 text-nowrap">
+<!--Выбор языка-->
+                <div class="position-relative col-lg-3">
+                    <label class="form-label" for="guideLanguagePlace">Выберите язык</label>
+                    <select class="form-select" id="guideLanguagePlace">
+                        <option value="Не выбрано">Не выбран</option>
+                    </select>
+                </div>
+<!--Фильтр опыта работы-->
+                <div class="position-relative col-lg-3 mt-3">
+                    <label class="form-label">Опыт работы</label>
+                    <div class="input-group mb-3">
+                        <label class="input-group-text" for="minExp">От:</label>
+                        <input type="text" class="form-control" id="minExp">
+                        <label class="input-group-text" for="maxExp">До:</label>
+                        <input type="text" class="form-control" id="maxExp">
+                        <button class="btn text-dark btn-outline-warning" type="button" id="guideExpSearch">Поиск</button>
+                    </div>
+                </div>
+            </div>
+<!--Таблица гидов-->
+            <div class="container overflow-scroll">
+                <table class="table table-bordered table-hover table-sm" id="guides">
+                    <thead>
+                    <tr>
+                        <th>Фото</th>
+                        <th>ФИО</th>
+                        <th>Языки</th>
+                        <th>Опыт (лет)</th>
+                        <th>Стоимость (руб/час)</th>
+                        <th class="guideTableChoise" id="route-and-guide-choice">Выбор</th>
+                    </tr>
+                    </thead>
+                    <tbody id="guidesBody"></tbody>
+                </table>
+            </div>
+<!--Навигация таблицы гидов-->
+            <div class="container text-center my-2">
+                Страница <span id="page-start-guides">1</span> из <span id="page-end-guides">1</span>
+            </div>
+            <div class="container d-flex justify-content-center">
+                <nav>
+                    <ul id="pagination-guides" class="pagination text-warning">
+                        <li class="page-item cursor-pointer">
+                            <a class="page-link text-warning" id="prev-guides"> Предыдущая</a>
+                        </li>
+                        <li class="page-item cursor-pointer">
+                            <a class="page-link text-warning btn-hover" id="next-guides">Следующая</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <button type="submit" class="d-flex flex-wrap justify-content-center align-items-center mt-2">Подать заявку</button>     
+    
+    </main>
+    <footer class="container-fluid bg-dark-grey m-0 p-0 text-light-grey">
+        <div class="contact-info d-flex flex-row py-3">
+            <div class="col-6 text-center">
+                <h3>Свяжитесь с нами</h3>
+                <p>Email: info@example.com</p>
+                <p>Phone: +3 (516) 343-7480</p>
+            </div>
+            <div class="col-6 text-center">
+                <h3>Адрес</h3>
+                <p>123 Main Street</p>
+                <p>City, Country</p>
+            </div>
+        </div>
+        <p class="text-center py-2 m-0 ">&copy; 2024 Илья Киселев. All rights reserved.</p>
+    </footer>
+</body>
+</html>
